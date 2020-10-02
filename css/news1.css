@@ -1,0 +1,88 @@
+body {
+    width: 100%;
+    background-color: rgb(251, 251, 249);
+}
+
+.my_navbar {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(245, 244, 237);
+    font-family: '华光行楷_CNKI';
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*flex布局*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my_nav_item {
+    text-align: center;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.nav_item_selected a {
+    color: rgb(184, 18, 27) !important;
+}
+
+.my_nav_item a {
+    color: rgb(127, 127, 127);
+    text-decoration: none;
+}
+
+.nav_item_selected {
+    font-size: 1.5em;
+}
+
+.nav_item_selected a::after {
+    background-color: rgb(184, 18, 27);
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -25%;
+    height: 10%;
+    width: 150%;
+}
+
+.line {
+    background-color: rgb(184, 18, 27);
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 10%;
+    width: 0;
+    transition: all 1s ease-in-out;
+}
+
+.my_nav_item:hover .line {
+    width: 150%;
+    left: -25%;
+}
+
+.nav_item_selected .triangle-down {
+    display: block;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 0px solid rgb(184, 18, 27);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transition: all 1s linear;
+}
+
+.my_nav_item:hover .triangle-down {
+    border-top-width: 12px;
+    bottom: -12px;
+}
