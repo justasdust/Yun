@@ -18,49 +18,40 @@
         <div class="my_nav_item">
             <a href="#">关于我们</a>
             <div class="line"></div>
+            <div class="triangle-down"></div>
         </div>
         <div class="my_nav_item">
             <a href="#">点餐</a>
             <div class="line"></div>
-        </div>
-        <div class="my_nav_item">
-            <a href="#">订座</a>
             <div class="triangle-down"></div>
         </div>
         <div class="my_nav_item nav_item_selected">
+            <a href="#">订座</a>
+            <div class="line"></div>
+            <div class="triangle-down"></div>
+        </div>
+        <div class="my_nav_item">
             <a href="#">知味</a>
+            <div class="line"></div>
             <div class="triangle-down"></div>
         </div>
         <div class="my_nav_item">
             <a href="#">社区</a>
+            <div class="line"></div>
             <div class="triangle-down"></div>
         </div>
         <div class="my_nav_item">
             <a href="#">动态</a>
+            <div class="line"></div>
             <div class="triangle-down"></div>
         </div>
         <div class="my_nav_item">
             <a href="#">登录/注册</a>
+            <div class="line"></div>
             <div class="triangle-down"></div>
         </div>
     </nav>
 
-    <script>
-        $(document).ready(function() {
-            $(".my_nav_item").hover(function() {
-                $(".my_nav_item a::after").css({
-                    "width": "150%",
-                    "background-color": "rgb(184,18,27)",
-                    "border-radius": "2px",
-                    "content": '',
-                    "position": "absolute",
-                    "bottom": "0",
-                    "left": "-25%",
-                    "height": "10%",
-                });
-            })
-        });
-    </script>
 </body>
 
 </html>

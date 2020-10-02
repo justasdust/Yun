@@ -50,7 +50,7 @@ body {
 }
 
 .line {
-    background-color: rgb(184, 18, 27);
+    background-color: rgb(127, 127, 127);
     border-radius: 2px;
     content: '';
     position: absolute;
@@ -70,16 +70,26 @@ body {
     display: block;
 }
 
+.nav_item_selected .line {
+    display: none;
+}
+
 .triangle-down {
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 0px solid rgb(184, 18, 27);
+    border-top: 12px solid rgb(184, 18, 27);
     position: absolute;
-    bottom: 0;
     left: 25%;
-    transition: all 1s linear;
+    display: none;
+    /*
+    bottom: -12px;
+    border-top-width: 0px;
+*/
+    bottom: 0;
+    border-top-width: 0px;
+    transition: all 1s ease-in-out;
 }
 
 .my_nav_item:hover .triangle-down {
