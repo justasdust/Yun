@@ -1,3 +1,5 @@
+/* 公共部分 */
+
 body {
     width: 100%;
     background-color: rgb(251, 251, 249);
@@ -6,6 +8,7 @@ body {
 .my_navbar {
     width: 100%;
     position: fixed;
+    top: 0;
     background-color: rgb(245, 244, 237);
     font-family: '华光行楷_CNKI';
     font-size: 1.1em;
@@ -89,10 +92,43 @@ body {
 */
     bottom: 0;
     border-top-width: 0px;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .my_nav_item:hover .triangle-down {
     border-top-width: 12px;
     bottom: -12px;
 }
+
+.my_footer {
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(20, 19, 17);
+}
+
+.my_footer_item {
+    width: 20%;
+    margin-top: 30px;
+    color: rgb(104, 104, 104);
+    margin-bottom: 30px;
+}
+
+.my_footer_item dt {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.my_footer_item dd {
+    font-size: 0.9em;
+}
+
+.my_footer_item dd span {
+    margin-right: 3%;
+}
+
+
+/* 以上是公共部分 */
